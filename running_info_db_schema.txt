@@ -1,0 +1,21 @@
+DROP database running_information_analysis_db_dev;
+
+CREATE database running_information_analysis_db_dev;
+
+USE running_information_analysis_db_dev;
+
+CREATE TABLE running_analysis
+  (
+    runningInfoId BIGINT NOT NULL,
+    runningId VARCHAR(100),
+    latitude FLOAT,
+    longitude FLOAT,
+    runningDistance FLOAT,
+    totalRunningTime FLOAT,
+    heartRate INT,
+    healthWarningLevel VARCHAR(10),
+    timestamp DATE,   
+    userinfo_username VARCHAR(100),
+    userinfo_address VARCHAR(256),
+    PRIMARY KEY(runningInfoId)
+  );
