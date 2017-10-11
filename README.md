@@ -13,33 +13,33 @@ mvn clean install
 java -jar running-information-analysis-service-1.0-SNAPSHOT.jar
 ```
 
-3. Test REST API - POST
+3. Test REST API - POST <br/>
 Open Postman app. Select POST verb. Enter the address below to "Enter Request URL" field. Copy contents in JSON_input.txt, and paste into body, select "raw" format and "JSON(application/json)", click "Send".
 ```
 http://localhost:8080/runningInfo
 ```
 
-4. Test REST API - GET
-In Postman app, select GET verb. 
-Enter the address below to "Enter Request URL" field. It will show all the results, display by pages. The URL has parameter "page=0". You can also try "page=1" or "page=2", etc. 
-Click "SEND".
+4. Test REST API - GET <br/>
+In Postman app, select GET verb. <br/>
+Enter the address below to "Enter Request URL" field. It will show all the results, display by pages. The URL has parameter "page=0". You can also try "page=1" or "page=2", etc. <br/>
+Click "SEND".<br/>
 ```
 http://localhost:8080/runningInfo?page=0
 ```
-Enter the address below to "Enter Request URL" field. It will show the result with runningId = "7c08973d-bed4-4cbd-9c28-9282a02a6032". Click "SEND".
+Enter the address below to "Enter Request URL" field. It will show the result with runningId = "7c08973d-bed4-4cbd-9c28-9282a02a6032". Click "SEND".<br/>
 ```
 http://localhost:8080/runningInfo/7c08973d-bed4-4cbd-9c28-9282a02a6032
 ```
 
-5. Test REST API - DELETE
-In Postman app, select DELETE verb. 
+5. Test REST API - DELETE<br/>
+In Postman app, select DELETE verb. <br/>
 Enter the address below to "Enter Request URL" field. It will delete the result with runningId = "7c08973d-bed4-4cbd-9c28-9282a02a6032".
-Click "SEND".
+Click "SEND".<br/>
 ```
 http://localhost:8080/runningInfo/7c08973d-bed4-4cbd-9c28-9282a02a6032
 ```
-Enter the address below to "Enter Request URL" field. It will delete all the results.
-Click "SEND".
+Enter the address below to "Enter Request URL" field. It will delete all the results.<br/>
+Click "SEND".<br/>
 ```
 http://localhost:8080/runningInfo/
 ```
