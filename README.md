@@ -2,17 +2,21 @@
 
 ## Create a mysql container
 **Specify several paramters**:<br/>
-**port forwarding**:<br/>
--p 3306:3306. The first 3306 is host port, the second 3306 is container port.<br/>
-**give the container a name**:<br/>
+-p 3306:3306 <br/>
+The first 3306 is host port, the second 3306 is container port. <br/>
+
 --name demo_mysql <br/>
-**MYSQL_ROOT_PASSWORD**:<br/>
-set the password to root user to "password"<br/>
-**pick mysql image**:<br/>
--d mysql:5.6
+give the container a name<br/>
+
+-e MYSQL_ROOT_PASSWORD=password <br/>
+set root user password to password <br/>
+
+-d mysql:5.6 <br/>
+pick mysql image <br/>
 ```
 docker run -p 3306:3306 --name demo_mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.6
 ```
+
 
 ## Build
 In the project folder
