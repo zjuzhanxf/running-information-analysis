@@ -3,6 +3,15 @@
 
 NOTE: I tried to use MySQL but haven't got it work yet. So the database is H2.
 
+## Create a mysql container, with name demo_mysql
+Specify several paramters:<br/>
+port forwarding: -p 3306:3306. The first 3306 is host port, the second 3306 is container port.
+MYSQL_ROOT_PASSWORD: set the password to root user to "password"
+pick mysql image: -d mysql:5.6
+```
+docker run -p 3306:3306 --name demo_mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.6
+```
+
 ## Build
 In the project folder
 ```
