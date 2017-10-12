@@ -1,8 +1,9 @@
 # running-information-analysis
 
-## Create a mysql container, with name demo_mysql
+## Create a mysql container
 Specify several paramters:<br/>
 port forwarding: -p 3306:3306. The first 3306 is host port, the second 3306 is container port.<br/>
+give the container a name: --name demo_mysql
 MYSQL_ROOT_PASSWORD: set the password to root user to "password"<br/>
 pick mysql image: -d mysql:5.6
 ```
