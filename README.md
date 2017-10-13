@@ -12,11 +12,16 @@ above step created a mysql container called demo_mysql
 docker exec -it demo_mysql mysql -u root -p
 ```
 Enter password, which is "password".
-
+Now we are in MySQL environment.
 ```
 CREATE DATABASE running_information_analysis_db
 ```
 Above command created a database "running_information_analysis_db" in the container demo_mysql.
+
+Exit MySQL
+```
+exit;
+```
 
 ## Build
 In the project folder
