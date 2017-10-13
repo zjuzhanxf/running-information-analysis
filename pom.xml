@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.toby.cs504</groupId>
-    <artifactId>running-information-analysis-service</artifactId>
+    <artifactId>running-information-analysis</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>running-information-analysis-demo.service</name>
+    <name>running-information-analysis</name>
     <description>CS504 Spring Nike Running Project Homework 1</description>
 
     <parent>

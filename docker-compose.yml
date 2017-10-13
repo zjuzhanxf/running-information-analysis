@@ -1,12 +1,11 @@
 version: "2"
 services:
   db:
-     image: mysql:5.6
+     image: mysql:5.7
      container_name: demo_mysql
      ports:
        - 3306:3306
      environment:
-       MYSQL_ROOT_PASSWORD: "password"
+       MYSQL_ROOT_PASSWORD: "root"
        MYSQL_DATABASE: "running_information_analysis_db"
-     volumes:
-       - /home/vagrant/tmp:/var/lib/mysql
+
