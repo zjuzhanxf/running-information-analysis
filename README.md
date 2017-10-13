@@ -1,22 +1,22 @@
 # running-information-analysis
 
 ## Create a mysql container
-**Specify several paramters**:<br/>
--p 3306:3306 <br/>
-The first 3306 is host port, the second 3306 is container port. <br/>
 
---name demo_mysql <br/>
-give the container a name<br/>
-
--e MYSQL_ROOT_PASSWORD=password <br/>
-set root user password to password <br/>
-
--d mysql:5.6 <br/>
-pick mysql image <br/>
 ```
-docker run -p 3306:3306 --name demo_mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.6
+docker-compose up
 ```
+above step created a mysql container called demo_mysql
 
+## Create database inside container
+```
+docker exec -it demo_mysql mysql -u root -p
+```
+Enter password, which is "password".
+
+```
+CREATE DATABASE running_information_analysis_db
+```
+Above command created a database "running_information_analysis_db" in the container demo_mysql.
 
 ## Build
 In the project folder
