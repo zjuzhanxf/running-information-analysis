@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e04ead9-8f35-4fa4-9248-80349e89a83b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
     </list>
     <ignored path="running-information-analysis-service.iws" />
@@ -134,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="358" />
-    <option name="y" value="91" />
+    <option name="x" value="515" />
+    <option name="y" value="88" />
     <option name="width" value="1532" />
     <option name="height" value="873" />
   </component>
@@ -715,15 +716,15 @@
       <workItem from="1507527229890" duration="2610000" />
       <workItem from="1507532664518" duration="21482000" />
       <workItem from="1507613116452" duration="32627000" />
-      <workItem from="1507863077813" duration="12497000" />
+      <workItem from="1507863077813" duration="12545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70275000" />
+    <option name="totallyTimeSpent" value="70323000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="358" y="91" width="1532" height="873" extended-state="0" />
+    <frame x="515" y="88" width="1532" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
