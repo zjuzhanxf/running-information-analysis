@@ -8,4 +8,5 @@ services:
      environment:
        MYSQL_ROOT_PASSWORD: "password"
        MYSQL_DATABASE: "running_information_analysis_db"
-
+     volumes:
+       - /home/vagrant/initdb:/docker-entrypoint-initdb.d
