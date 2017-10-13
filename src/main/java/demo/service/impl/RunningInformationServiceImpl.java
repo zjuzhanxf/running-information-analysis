@@ -27,17 +27,6 @@ public class RunningInformationServiceImpl implements RunningInformationService 
 
     @Override
     public List<RunningInformation> saveRunningInformation(List<RunningInformation> runningInformationList) {
-        Random rand = new Random();
-        for (RunningInformation info : runningInformationList) {
-            info.setHeartRate(60 + rand.nextInt(141)); // generate an integer in range [60, 200]
-            if(info.getHeartRate() >= 60 && info.getHeartRate() <= 75) {
-                info.setHealthWarningLevel("LOW");
-            } else if (info.getHeartRate() <= 120) {
-                info.setHealthWarningLevel("NORMAL");
-            } else {
-                info.setHealthWarningLevel("HIGH");
-            }
-        }
         return runningInformationRepository.save(runningInformationList);
     }
 

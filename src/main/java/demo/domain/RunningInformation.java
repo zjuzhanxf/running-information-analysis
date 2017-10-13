@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Random;
 
 /**
  * Created by xiaofeng on 10/8/17.
@@ -15,6 +16,10 @@ import java.util.Date;
 @Entity
 @Table(name = "running_analysis")
 public class RunningInformation {
+
+    enum HealthWarningLevel {
+        HIGH, NORMAL, LOW;
+    }
 
     @Id
     @GeneratedValue
@@ -35,7 +40,7 @@ public class RunningInformation {
 
     private int heartRate;
 
-    private String healthWarningLevel;
+    private HealthWarningLevel healthWarningLevel;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Date timestamp = new Date();
@@ -66,4 +71,18 @@ public class RunningInformation {
 
     @JsonProperty(value = "userAddress")
     public String getAddress() {return this.userInfo.getAddress();}
+
+    public void setHeartRate(int heartRate) {
+        int min = 60;
+        int max = 200;
+        Random rand = new Random();
+        this.heartRate = rand.nextInt(max - min + 1) + min;
+        if(this.heartRate >= 60 && this.heartRate <= 75) {
+            this.healthWarningLevel = HealthWarningLevel.LOW;
+        } else if (this.heartRate <= 120) {
+            this.healthWarningLevel = HealthWarningLevel.NORMAL;
+        } else {
+            this.healthWarningLevel = HealthWarningLevel.HIGH;
+        }
+    }
 }
