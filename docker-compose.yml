@@ -2,7 +2,7 @@ version: "2"
 services:
   db:
      image: mysql:5.6
-     container_name: cs504_mysql
+     container_name: demo_mysql
      ports:
        - 3306:3306
      environment:
